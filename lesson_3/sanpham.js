@@ -6,7 +6,7 @@ function handleSearch(e) {
         e.preventDefault();
     }
     else {
-        window.location.href = "../lesson_9/timkiem.html";
+        window.location.href = "../lesson_9/index.html";
     }
 
 }
