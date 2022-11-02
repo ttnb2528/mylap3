@@ -1,0 +1,14 @@
+.main__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "left-cell article-cell right-cell";
+}
+
+.aside__grid{
+    grid-area: left-cell;
+}
+
+.article__grid{
+    grid-area: article-cell;
+}
