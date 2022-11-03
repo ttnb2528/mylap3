@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../data/images/favicon.ico">
+    <link rel="stylesheet" href="../font-icon/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../base_css/base.css">
+    <link rel="stylesheet" href="./donhang.css">
+   
+    <title>Đơn hàng</title>
+    
+</head>
+
+<body>
+    <header>
+        <img src="../data/images/header-img1.png" alt="" class="header__img-1">
+        <img src="../data/images/header-img2.png" alt="" class="header__img-2">
+        <img src="../data/images/header-img3.png" alt="" class="header__img-3">
+        <a href="../lesson_2/trangchu.html"><img src="../data/images/logo.png" alt="trang chu" id="header__logo"></a>
+
+        <nav class="header__navbar header__navbar-css">
+            <a href="../trang chủ/trangchu.html">Trang chủ</a>
+            <a href="../giới thiệu/gioithieu.html">Giới thiệu</a>
+            <a href="../sản phẩm/sanpham.html">Sản phẩm</a>
+            <a href="../tin tức/tintuc.html">Tin tức</a>
+            <a href="../đăng nhập/dangnhap.html">Đăng nhập</a>
+            <a href="../đăng ký/dangky.html">Đăng ký</a>
+            <a href="../liên hệ/lienhe.html">Liên hệ</a>
+
+            <div class="header__search">
+                    <input class="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search">
+                    <button class="header__search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="header__cart-icon" onclick="opencard()">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <h1 class="main__title-h1">chi tiết đơn hàng</h1>
+      <div class="main__title-bd"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Hình Sp</th>
+            <th>Tên Sp</th>
+            <th>Số Lượng</th>
+            <th>Giá</th>
+            <th>Thành Tiền</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="sp-body"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="6" class="sp-right">
+              Tổng Thành Tiền A = <span class="sumA">0</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6" class="sp-right">
+              Chiết Khấu (B) = <span class="sp-discount">0.1</span> x A =
+              <span class="sumB">0</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6" class="sp-right">
+              Thuế (C) = 10% x (A - B) = <span class="sumC">0</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6" class="sp-right">
+              Tổng đơn hàng = A - B + C = <span class="total">0</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6" class="sp-center">
+              <button>Xác Nhận Đơn Hàng</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <p>
+                © 2021 Bản quyền thuộc về Freeeze VN.
+                <a href="https://www.facebook.com/thientan2528/">
+                    <i class="fa-brands fa-facebook footer__icon-link"></i>
+                </a>
+                <a href="#"><i class="fa-brands fa-twitter footer__icon-link"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest footer__icon-link"></i></a>
+            </p>
+        </div>
+        <a href="#">
+            <img src="../data/images/top.png" class="footer_return" alt="quay về đầu trang">
+        </a>
+    </footer>
+    <script src="./donhang.js"></script>
+</body>
+
+
+</html>

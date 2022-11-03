@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../data/images/favicon.ico">
+    <link rel="stylesheet" href="../font-icon/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../base_css/base.css">
+    <link rel="stylesheet" href="./lienhe.css">
+    <title>Liên hệ</title>
+</head>
+
+<body>
+    <header>
+        <img src="../data/images/header-img1.png" alt="" class="header__img-1">
+        <img src="../data/images/header-img2.png" alt="" class="header__img-2">
+        <img src="../data/images/header-img3.png" alt="" class="header__img-3">
+        <a href="../lesson_2/trangchu.html"><img src="../data/images/logo.png" alt="trang chu" id="header__logo"></a>
+
+        <nav class="header__navbar header__navbar-css">
+            <a href="../trang chủ/trangchu.html">Trang chủ</a>
+            <a href="../giới thiệu/gioithieu.html">Giới thiệu</a>
+            <a href="../sản phẩm/sanpham.html">Sản phẩm</a>
+            <a href="../tin tức/tintuc.html">Tin tức</a>
+            <a href="../đăng nhập/dangnhap.html">Đăng nhập</a>
+            <a href="../đăng ký/dangky.html">Đăng ký</a>
+            <a href="#">Liên hệ</a>
+
+            <div class="header__search">
+                <input class="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search">
+                <button class="header__search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="header__cart-icon" onclick="opencard()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <article">
+            <h1 class="main__title-h1">Liên hệ</h1>
+            <div class="main__title-bd"></div>
+            <div class="main__contact-address">
+                <img src="../data/images/lienhe/check-in.png" alt="liên hệ" class="main__contact-img">
+
+                <b>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</b>
+
+
+                Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới.
+                Xin cám ơn.
+
+            </div>
+
+
+            <h1 class="main__title-h1">Góp ý</h1>
+            <div class="main__title-bd"></div>
+            <form action="./lienhe.html" method="get" enctype="application/x-www-form-urlencoded"
+                onsubmit="return frmValidate();" name="regfr">
+
+                <table>
+                    <tr class="main__table-list">
+                        <td>
+                            <label for="input-name">
+                                <i class="fa-solid fa-user main__info-icon"></i>
+                            </label>
+                        </td>
+                        <td>
+                            <input required type="text" name="name" id="input-name" class="main__recomand-input"
+                                placeholder="Vui lòng nhập Họ Tên của bạn">
+                        </td>
+                    </tr>
+
+                    <tr class="main__table-list">
+                        <td>
+                            <label for="input-email">
+                                <i class="fa-solid fa-envelope main__info-icon"></i>
+                            </label>
+                        </td>
+                        <td>
+                            <input required pattern="^[a- zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" type="text"
+                                name="mail" id="input-email" class="main__recomand-input"
+                                placeholder="Vui lòng nhập địa chỉ Email">
+                        </td>
+                    </tr>
+
+                    <tr class="main__table-list">
+                        <td>
+                            <i class="fa-solid fa-list main__info-icon"></i>
+                        </td>
+                        <td>
+                            <select name="project" id="">
+                                <option value="về sẩn phẩm/dịch vụ">Về Sản Phẩm/Dịch Vụ</option>
+                                <option value="về ưu đãi thành viên">Về Ưu Đãi Thành Viên</option>
+                                <option value="về tin tuyển dụng">Về Tin Tuyển Dụng</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr class="main__table-list">
+                        <td>
+                            <label for="input-message">
+                                <i class="fa-solid fa-comment main__info-icon"></i>
+                            </label>
+                        </td>
+
+
+                        <td>
+                            <textarea required name="contact" id="input-message" cols="50" rows="7"
+                                placeholder="Nội dung cần liên hệ"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Gửi">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            </article>
+    </main>
+
+    <footer>
+        <div>
+            <p>
+                © 2021 Bản quyền thuộc về Freeeze VN.
+                <a href="https://www.facebook.com/thientan2528/">
+                    <i class="fa-brands fa-facebook footer__icon-link"></i>
+                </a>
+                <a href="#"><i class="fa-brands fa-twitter footer__icon-link"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest footer__icon-link"></i></a>
+            </p>
+        </div>
+    </footer>
+    <a href="#">
+        <img src="../data/images/top.png" class="footer_return" alt="quay về đầu trang">
+    </a>
+</body>
+
+<script src="./lienhe.js">
+    function frmValidate() {
+        var frm = document.forms['regfr'];
+
+        //mail
+        var mail = frm.mail;
+        var filter = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+        var messages = frm.contact;
+        var people = frm.name;
+
+        if (people.value.length < 4) {
+            alert('Tên bạn dưới 4 ký tự, quá ngắn (nhập đầy đủ họ tên!)');
+            people.focus();
+            return false;
+        }
+
+        if (!filter.test(mail.value)) {
+            alert("Hãy nhập đúng định dạng Mail!");
+            mail.focus();
+            return false;
+        }
+
+
+        if (messages.value.length < 10) {
+            alert('Nội dung quá ngắn (10 ký tự trở lên)');
+            messages.focus();
+            return false;
+        }
+        alert("Gửi thành công!");
+        return true;
+    }
+</script>
+
+</html>

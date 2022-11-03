@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../data/images/favicon.ico">
+    <link rel="stylesheet" href="../font-icon/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../base_css/base.css">
+    <link rel="stylesheet" href="./dangnhap.css">
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <header>
+        <img src="../data/images/header-img1.png" alt="" class="header__img-1">
+        <img src="../data/images/header-img2.png" alt="" class="header__img-2">
+        <img src="../data/images/header-img3.png" alt="" class="header__img-3">
+        <a href="../lesson_2/trangchu.html"><img src="../data/images/logo.png" alt="trang chu" id="header__logo"></a>
+
+        <nav class="header__navbar header__navbar-css">
+            <a href="../trang chủ/trangchu.html">Trang chủ</a>
+            <a href="../giới thiệu/gioithieu.html">Giới thiệu</a>
+            <a href="../sản phẩm/sanpham.html">Sản phẩm</a>
+            <a href="../tin tức/tintuc.html">Tin tức</a>
+            <a href="#">Đăng nhập</a>
+            <a href="../đăng ký/dangky.html">Đăng ký</a>
+            <a href="../liên hệ/lienhe.html">Liên hệ</a>
+
+            <div class="header__search">
+                <input class="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search">
+                <button class="header__search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="header__cart-icon" onclick="opencard()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <article>
+            <form action="" enctype="application/x-www-form-urlencoded" onsubmit="frmValidate();" name="regfr">
+                <h1 class="main__title-h1">ĐĂNG NHẬP</h1>
+                <div class="main__title-bd"></div>
+
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <img src="../data/images/dangnhap/userlogin.png" alt="userlogin">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="input-email">
+                                <i class="header__search-icon2 fa-solid fa-envelope"></i>
+                            </label>
+                        </th>
+                        <td>
+                            <input type="email"
+                                id="input-email" name="mail" placeholder="Nhập email">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="input-psw">
+                                <i class="header__search-icon2 fa-solid fa-key"></i>
+                            </label>
+                        </th>
+                        <td>
+                            <input  type="password" id="input-psw" name="psw" placeholder="Nhập mật khẩu">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            Bạn quên <a href="#">Mật Khẩu?</a>
+                            <input type="checkbox" checked name="remember">Ghi nhớ cho lần đăng nhập sau
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input id ="btn" type="submit" value="Đăng nhập">
+                            <input type="reset" value="Hủy">
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </article>
+
+    </main>
+    <footer>
+        <div>
+            <p>
+                © 2021 Bản quyền thuộc về Freeeze VN.
+                <a href="https://www.facebook.com/thientan2528/">
+                    <i class="fa-brands fa-facebook footer__icon-link"></i>
+                </a>
+                <a href="#"><i class="fa-brands fa-twitter footer__icon-link"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest footer__icon-link"></i></a>
+            </p>
+        </div>
+    </footer>
+    <a href="#">
+        <img src="../data/images/top.png" class="footer_return" alt="quay về đầu trang">
+    </a>
+</body>
+
+<script src="./dangnhap.js">
+
+</script>
+
+
+</html>
